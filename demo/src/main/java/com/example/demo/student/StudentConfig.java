@@ -15,10 +15,10 @@ public class StudentConfig {
     @Bean
     CommandLineRunner commandLineRunner(StudentRepository studentRepository) {
         return args -> {
-            Student maria = new Student( "maria", "maria@maria.com", LocalDate.of(2000, Month.JANUARY,  5), 21);
-            Student alex = new Student( "alex", "alex@alex.com", LocalDate.of(2001, Month.JUNE,  5), 21);
-            Student megan = new Student( "megan", "megan@megan.com", LocalDate.of(2000, Month.JANUARY,  5), 21);
-            Student jennifer = new Student( "jennifer", "jennifer@jennifer.com", LocalDate.of(2000, Month.JANUARY,  5), 21);
+            Student maria = new Student( "maria", "maria@maria.com", LocalDate.of(2000, Month.JANUARY,  5));
+            Student alex = new Student( "alex", "alex@alex.com", LocalDate.of(2001, Month.JUNE,  5));
+            Student megan = new Student( "megan", "megan@megan.com", LocalDate.of(2005, Month.JANUARY,  5));
+            Student jennifer = new Student( "jennifer", "jennifer@jennifer.com", LocalDate.of(2003, Month.JANUARY,  5));
 
 //            how you save everything
             studentRepository.saveAll(List.of(maria, alex, megan, jennifer));
